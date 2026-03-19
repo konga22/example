@@ -10,8 +10,12 @@ class DefaultPage extends StatelessWidget {
         leading: const Icon(Icons.home),
         title: const Text('예제 화면'),
       ),
-      body: Center(
-        child: Container(width: 100, height: 100, color: Colors.amber),
+      body: Row(
+        children: [
+          Expanded(child: Container(color: Colors.red)),
+          Expanded(child: Container(color: Colors.blue)),
+          Expanded(child: Container(color: Colors.yellow)),
+        ],
       ),
     );
   }

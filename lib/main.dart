@@ -1,4 +1,5 @@
 import 'package:example/ui/pages/default_page.dart';
+import 'package:example/ui/pages/todo_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,9 +30,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(brightness: .dark, seedColor: Colors.blue),
+        colorScheme: .fromSeed(brightness: .light, seedColor: Colors.blue),
       ),
-      home: const DefaultPage(),
+      home: const TodoPage(),
     );
   }
 }
