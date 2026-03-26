@@ -1,3 +1,5 @@
+import 'package:example/ui/pages/todo/widget/filter_row.dart';
+import 'package:example/ui/pages/todo/widget/progress_card.dart';
 import 'package:flutter/material.dart';
 import 'todo/widget/header.dart';
 
@@ -12,6 +14,8 @@ class TodoPage extends StatelessWidget {
           children: [
             //타이틀 상단
             Header(),
+            ProgressCard(),
+            FilterRow(),
           ],
         ),
       ),
