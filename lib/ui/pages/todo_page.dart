@@ -14,35 +14,21 @@ class TodoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        bottom: false,
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const .all(24),
-            child: Column(
-              spacing: 24,
-              crossAxisAlignment: .stretch,
-              children: [
-                const Header(),
-                const ProgressCard(),
-                const FilterRow(),
-                _buildTodoTitle(),
-                const TodoList(),
-                // 하단 여백 확보 (네비게이션 바와 플로팅 버튼 고려)
-                const SizedBox(height: 100),
-              ],
-            ),
+        child: Padding(
+          padding: const .all(24),
+          child: Column(
+            spacing: 24,
+            crossAxisAlignment: .stretch,
+            children: [
+              const Header(),
+              const ProgressCard(),
+              const FilterRow(),
+              _buildTodoTitle(),
+              const TodoList(),
+              const BottomNavigation(),
+            ],
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: const Color(0xFF8B5CF6),
-        shape: const CircleBorder(),
-        child: const Icon(Icons.add, color: Colors.white, size: 32),
-      ),
-      bottomNavigationBar: const Padding(
-        padding: .all(16),
-        child: BottomNavigation(),
       ),
     );
   }
