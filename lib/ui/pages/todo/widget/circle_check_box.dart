@@ -11,11 +11,11 @@ class CircleCheckBox extends StatelessWidget {
       width: 24,
       height: 24,
       decoration: BoxDecoration(
-        shape: BoxShape.circle, // .circle -> BoxShape.circle
+        shape: BoxShape.circle,
         color: value ? Process.done.primaryColor : Colors.grey[300],
         border: value
             ? null
-            : Border.all(color: Colors.grey), // .all -> Border.all
+            : Border.all(color: Colors.grey),
       ),
       child: value
           ? const Icon(Icons.check, color: Colors.white, size: 16)

@@ -9,7 +9,6 @@ class TodoList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 더미 데이터 생성
     final dummy = [
       (
         title: "운동하기",
@@ -47,10 +46,8 @@ class TodoList extends StatelessWidget {
           child: Row(
             spacing: 12,
             children: [
-              // 체크박스
               CircleCheckBox(value: data.process == .done),
 
-              // 할 일 텍스트
               Expanded(
                 child: Column(
                   crossAxisAlignment: .start,
@@ -67,7 +64,6 @@ class TodoList extends StatelessWidget {
                 ),
               ),
 
-              //Process Badge
               ProcessBadge(process: data.process),
             ],
           ),
